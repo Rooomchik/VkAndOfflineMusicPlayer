@@ -1,0 +1,91 @@
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\bin\Debug\taglib-sharp.dll
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\A_Player.Form1.resources
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\Intel\Documents\Visual Studio 2010\Projects\A_Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\A_Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\Donet\Desktop\A_Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.Form1.resources
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\Donet\Desktop\A_Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\Roma\Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\Donet\Desktop\Roma\Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
+C:\Users\Donet\Desktop\Roma\Player\A_Player\obj\Debug\A_Player.Form1.resources
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.Form1.resources
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.Form2.resources
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\A_Player.exe.config
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.Form3.resources
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Net.Http.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Web.Http.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Net.Http.xml
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Web.Http.xml
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.xml
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\RomanHU\Desktop\Player.v.2\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\romka_000\Desktop\Player\A_Player\bin\Debug\A_Player.exe.config
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\romka_000\Desktop\Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\romka_000\Desktop\Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\romka_000\Desktop\Player\A_Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.Form1.resources
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.Form2.resources
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.Form3.resources
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\romka_000\Desktop\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\A_Player.exe.config
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\System.Net.Http.xml
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\System.Web.Http.xml
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.xml
+C:\Users\Donet\Desktop\Player\A_Player\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.Form1.resources
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.Form2.resources
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.Form3.resources
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\Donet\Desktop\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
