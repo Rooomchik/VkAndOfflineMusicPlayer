@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AudioPlayer));
             this.OpenTrack = new System.Windows.Forms.Button();
             this.PlayPause = new System.Windows.Forms.Button();
             this.Songcsroll = new System.Windows.Forms.TrackBar();
@@ -44,15 +45,13 @@
             this.Maximum = new System.Windows.Forms.Button();
             this.MusicList = new System.Windows.Forms.ListBox();
             this.OpenFolder = new System.Windows.Forms.Button();
-            this.DeleteFolder = new System.Windows.Forms.Button();
+            this.DeleteList = new System.Windows.Forms.Button();
             this.SavePlaylist = new System.Windows.Forms.Button();
             this.OpenPlaylist = new System.Windows.Forms.Button();
             this.VKPlayer = new System.Windows.Forms.Button();
             this.DeleteTrack = new System.Windows.Forms.Button();
             this.TextSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.VKList = new System.Windows.Forms.ListBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.Songcsroll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Volume)).BeginInit();
             this.SuspendLayout();
@@ -61,9 +60,9 @@
             // 
             this.OpenTrack.BackColor = System.Drawing.SystemColors.Window;
             this.OpenTrack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.OpenTrack.Location = new System.Drawing.Point(118, 9);
+            this.OpenTrack.Location = new System.Drawing.Point(17, 17);
             this.OpenTrack.Name = "OpenTrack";
-            this.OpenTrack.Size = new System.Drawing.Size(87, 21);
+            this.OpenTrack.Size = new System.Drawing.Size(87, 44);
             this.OpenTrack.TabIndex = 0;
             this.OpenTrack.Text = "OpenTrack";
             this.OpenTrack.UseVisualStyleBackColor = false;
@@ -135,7 +134,7 @@
             // Vloume
             // 
             this.Vloume.AutoSize = true;
-            this.Vloume.Location = new System.Drawing.Point(62, 9);
+            this.Vloume.Location = new System.Drawing.Point(331, 79);
             this.Vloume.Name = "Vloume";
             this.Vloume.Size = new System.Drawing.Size(50, 13);
             this.Vloume.TabIndex = 7;
@@ -144,7 +143,7 @@
             // Volume
             // 
             this.Volume.Enabled = false;
-            this.Volume.Location = new System.Drawing.Point(67, 25);
+            this.Volume.Location = new System.Drawing.Point(336, 95);
             this.Volume.Name = "Volume";
             this.Volume.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.Volume.Size = new System.Drawing.Size(45, 80);
@@ -156,14 +155,14 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(266, 56);
+            this.label11.Location = new System.Drawing.Point(256, 56);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 13);
             this.label11.TabIndex = 16;
             // 
             // Minimum
             // 
-            this.Minimum.Location = new System.Drawing.Point(23, 82);
+            this.Minimum.Location = new System.Drawing.Point(370, 145);
             this.Minimum.Name = "Minimum";
             this.Minimum.Size = new System.Drawing.Size(38, 23);
             this.Minimum.TabIndex = 17;
@@ -173,7 +172,7 @@
             // 
             // Maximum
             // 
-            this.Maximum.Location = new System.Drawing.Point(23, 25);
+            this.Maximum.Location = new System.Drawing.Point(370, 101);
             this.Maximum.Name = "Maximum";
             this.Maximum.Size = new System.Drawing.Size(38, 23);
             this.Maximum.TabIndex = 18;
@@ -187,35 +186,35 @@
             this.MusicList.Location = new System.Drawing.Point(12, 205);
             this.MusicList.Margin = new System.Windows.Forms.Padding(0);
             this.MusicList.Name = "MusicList";
-            this.MusicList.Size = new System.Drawing.Size(727, 212);
+            this.MusicList.Size = new System.Drawing.Size(405, 186);
             this.MusicList.TabIndex = 19;
             this.MusicList.SelectedIndexChanged += new System.EventHandler(this.list_SelectedIndexChanged);
             // 
             // OpenFolder
             // 
-            this.OpenFolder.Location = new System.Drawing.Point(118, 33);
+            this.OpenFolder.Location = new System.Drawing.Point(15, 68);
             this.OpenFolder.Name = "OpenFolder";
-            this.OpenFolder.Size = new System.Drawing.Size(87, 21);
+            this.OpenFolder.Size = new System.Drawing.Size(89, 44);
             this.OpenFolder.TabIndex = 20;
             this.OpenFolder.Text = "OpenFolder";
             this.OpenFolder.UseVisualStyleBackColor = true;
             this.OpenFolder.Click += new System.EventHandler(this.OpenFolder_Click);
             // 
-            // DeleteFolder
+            // DeleteList
             // 
-            this.DeleteFolder.Location = new System.Drawing.Point(118, 59);
-            this.DeleteFolder.Name = "DeleteFolder";
-            this.DeleteFolder.Size = new System.Drawing.Size(87, 20);
-            this.DeleteFolder.TabIndex = 21;
-            this.DeleteFolder.Text = "DeleteFolder";
-            this.DeleteFolder.UseVisualStyleBackColor = true;
-            this.DeleteFolder.Click += new System.EventHandler(this.DeleteFolder_Click);
+            this.DeleteList.Location = new System.Drawing.Point(12, 397);
+            this.DeleteList.Name = "DeleteList";
+            this.DeleteList.Size = new System.Drawing.Size(87, 24);
+            this.DeleteList.TabIndex = 21;
+            this.DeleteList.Text = "DeleteList";
+            this.DeleteList.UseVisualStyleBackColor = true;
+            this.DeleteList.Click += new System.EventHandler(this.DeleteList_Click);
             // 
             // SavePlaylist
             // 
-            this.SavePlaylist.Location = new System.Drawing.Point(211, 32);
+            this.SavePlaylist.Location = new System.Drawing.Point(110, 68);
             this.SavePlaylist.Name = "SavePlaylist";
-            this.SavePlaylist.Size = new System.Drawing.Size(87, 21);
+            this.SavePlaylist.Size = new System.Drawing.Size(87, 44);
             this.SavePlaylist.TabIndex = 22;
             this.SavePlaylist.Text = "SavePlaylist";
             this.SavePlaylist.UseVisualStyleBackColor = true;
@@ -223,9 +222,9 @@
             // 
             // OpenPlaylist
             // 
-            this.OpenPlaylist.Location = new System.Drawing.Point(211, 9);
+            this.OpenPlaylist.Location = new System.Drawing.Point(110, 17);
             this.OpenPlaylist.Name = "OpenPlaylist";
-            this.OpenPlaylist.Size = new System.Drawing.Size(87, 21);
+            this.OpenPlaylist.Size = new System.Drawing.Size(87, 44);
             this.OpenPlaylist.TabIndex = 23;
             this.OpenPlaylist.Text = "OpenPlaylist";
             this.OpenPlaylist.UseVisualStyleBackColor = true;
@@ -233,9 +232,9 @@
             // 
             // VKPlayer
             // 
-            this.VKPlayer.Location = new System.Drawing.Point(211, 59);
+            this.VKPlayer.Location = new System.Drawing.Point(203, 48);
             this.VKPlayer.Name = "VKPlayer";
-            this.VKPlayer.Size = new System.Drawing.Size(88, 23);
+            this.VKPlayer.Size = new System.Drawing.Size(77, 62);
             this.VKPlayer.TabIndex = 24;
             this.VKPlayer.Text = "VKPlayer";
             this.VKPlayer.UseVisualStyleBackColor = true;
@@ -243,9 +242,9 @@
             // 
             // DeleteTrack
             // 
-            this.DeleteTrack.Location = new System.Drawing.Point(118, 85);
+            this.DeleteTrack.Location = new System.Drawing.Point(110, 397);
             this.DeleteTrack.Name = "DeleteTrack";
-            this.DeleteTrack.Size = new System.Drawing.Size(87, 20);
+            this.DeleteTrack.Size = new System.Drawing.Size(87, 24);
             this.DeleteTrack.TabIndex = 25;
             this.DeleteTrack.Text = "DeleteTrack";
             this.DeleteTrack.UseVisualStyleBackColor = true;
@@ -268,31 +267,19 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Search";
             // 
-            // VKList
-            // 
-            this.VKList.FormattingEnabled = true;
-            this.VKList.Location = new System.Drawing.Point(433, 9);
-            this.VKList.Name = "VKList";
-            this.VKList.Size = new System.Drawing.Size(303, 186);
-            this.VKList.TabIndex = 28;
-            // 
-            // backgroundWorker1
-            // 
-
-            // 
             // AudioPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 430);
-            this.Controls.Add(this.VKList);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(431, 430);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TextSearch);
             this.Controls.Add(this.DeleteTrack);
             this.Controls.Add(this.VKPlayer);
             this.Controls.Add(this.OpenPlaylist);
             this.Controls.Add(this.SavePlaylist);
-            this.Controls.Add(this.DeleteFolder);
+            this.Controls.Add(this.DeleteList);
             this.Controls.Add(this.OpenFolder);
             this.Controls.Add(this.MusicList);
             this.Controls.Add(this.Maximum);
@@ -314,7 +301,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Audio Player";
-        
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AudioPlayer_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AudioPlayer_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AudioPlayer_MouseUp);
@@ -342,15 +328,13 @@
         private System.Windows.Forms.Button Maximum;
         private System.Windows.Forms.ListBox MusicList;
         private System.Windows.Forms.Button OpenFolder;
-        private System.Windows.Forms.Button DeleteFolder;
+        private System.Windows.Forms.Button DeleteList;
         private System.Windows.Forms.Button SavePlaylist;
         private System.Windows.Forms.Button OpenPlaylist;
         private System.Windows.Forms.Button VKPlayer;
         private System.Windows.Forms.Button DeleteTrack;
         private System.Windows.Forms.TextBox TextSearch;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox VKList;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

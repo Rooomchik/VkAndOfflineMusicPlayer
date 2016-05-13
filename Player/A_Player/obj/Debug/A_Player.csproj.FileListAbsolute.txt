@@ -95,6 +95,7 @@ D:\Dev\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
 D:\Dev\Player\A_Player\obj\Debug\A_Player.exe
 D:\Dev\Player\A_Player\obj\Debug\A_Player.pdb
 D:\Dev\Player\A_Player\obj\Debug\A_Player.VkAuthorization.resources
+D:\Dev\Player\A_Player\obj\Debug\A_Player.VKMusicList.resources
 D:\Dev\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
 D:\Dev\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
 D:\Dev\Player\A_Player\bin\Debug\A_Player.exe
@@ -113,3 +114,35 @@ D:\Dev\Player\A_Player\bin\Debug\System.Web.Http.xml
 D:\Dev\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.xml
 D:\Dev\Player\A_Player\bin\Debug\System.Web.Http.WebHost.xml
 D:\Dev\Player\A_Player\obj\Debug\A_Player.AudioPlayer.resources
+D:\Dev\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\RomanHU\Desktop\1\Projectplayer-master\Player\A_Player\bin\Debug\A_Player.exe.config
+C:\Users\RomanHU\Desktop\1\Projectplayer-master\Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\RomanHU\Desktop\1\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\RomanHU\Desktop\1\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\RomanHU\Desktop\1\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\A_Player.exe.config
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.exe
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.pdb
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\A_Player.exe
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\A_Player.pdb
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Net.Http.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Net.Http.WebRequest.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Web.Http.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Net.Http.xml
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Net.Http.WebRequest.xml
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Web.Http.xml
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.xml
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.AudioPlayer.resources
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.VkAuthorization.resources
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.VKMusicList.resources
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
+C:\Users\RomanHU\Desktop\1 - Copy\Projectplayer-master\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache

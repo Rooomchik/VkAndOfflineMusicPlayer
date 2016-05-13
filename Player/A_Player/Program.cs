@@ -14,7 +14,7 @@ namespace A_Player
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AudioPlayer());
-           // Application.Run(new VKList());
+            Application.Run(new VKMusicList());
         }
     }
 }

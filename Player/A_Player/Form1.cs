@@ -1,30 +1,20 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading;
-using System.Web;
+﻿using System;
 using WMPLib;
+using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
+using System.Text;
 
 namespace A_Player
 {
     public partial class AudioPlayer : Form
     {
-
         WindowsMediaPlayer wmp;
-        public List<Audio> audioList;
         bool pausePlay;
         bool mousePressed = false;
         Point mouseDownPos;
-        
 
         List<Sound> sounds = new List<Sound>();
         List<Sound> find = new List<Sound>();
@@ -32,84 +22,8 @@ namespace A_Player
         public AudioPlayer()
         {
             InitializeComponent();
-
             wmp = new WindowsMediaPlayer();
-
         }
-        private void AudioPlayer_Load(object sender, EventArgs e)
-        {
-            backgroundWorker1.RunWorkerAsync();
-        }
-        public class Audio
-        {
-            public int aid { get; set; }
-            public int owner_id { get; set; }
-            public string artist { get; set; }
-            public string title { get; set; }
-            public int duration { get; set; }
-            public string url { get; set; }
-            public string lurics_id { get; set; }
-            public int genre { get; set; }
-        }
-
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            while (!Settings1.Default.authorization) { Thread.Sleep(500); }
-            WebRequest request =
-                WebRequest.Create("https://api.vk.com/method/audio.get?owner id= " + Settings1.Default.id + "&need_user=0&access_token=" + Settings1.Default.token);
-            WebResponse response = request.GetResponse();
-            Stream dataStream = response.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            string responseFromServer = reader.ReadToEnd();
-            reader.Close();
-            response.Close();
-            responseFromServer = HttpUtility.HtmlDecode(responseFromServer);
-            JToken token = JToken.Parse(responseFromServer);
-
-            audioList = Enumerable.Skip(token["response"].Children(), 1).Select(c => c.ToObject<Audio>()).ToList();﻿
-
-            this.Invoke((MethodInvoker)delegate
-            {
-                for (int i = 0; i < audioList.Count(); i++)
-                {
-                    VKList.Items.Add(audioList[i].artist + " - " + audioList[i].title);
-                }
-
-            });
-        }
-
-        private void VKList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-       
-                int curItem = VKList.SelectedIndex;
-
-                
-                wmp.settings.volume = 100;
-                wmp.controls.stop();
-                Songcsroll.Value = 0;
-                Volume.Value = 10;
-
-                label1.Text = "";
-                label11.Text = "";
-                label3.Text = "0:00:00";
-                label2.Text = "0:00:00";
-
-                wmp.URL = audioList[curItem].url;
-                wmp.controls.play();
-                timer1.Interval = 1000;
-                Songcsroll.Enabled = true;
-                Volume.Enabled = true;
-
-                timer1.Enabled = true;
-                OpenTrack.Enabled = false;
-                PlayPause.Enabled = true;
-                Stop.Enabled = true;
-                label1.Text = "Playing:";
-            
-        }
-
-
 
         private void OpenTrack_Click(object sender, EventArgs e)
         {
@@ -134,7 +48,6 @@ namespace A_Player
                 timer1.Enabled = true;
                 PlayPause.Enabled = true;
                 Stop.Enabled = true;
-                label1.Text = "Playing:";
 
                 Sound sound = new Sound { Name = Path.GetFileName(ofd.FileName), Dir = Path.GetDirectoryName(ofd.FileName) };
                 sounds.Add(sound);
@@ -153,7 +66,6 @@ namespace A_Player
             if (!pausePlay)
             {
                 wmp.controls.play();
-                label1.Text = "Playing:";
             }
         }
 
@@ -200,8 +112,6 @@ namespace A_Player
                 wmp.settings.volume = 0;
         }
 
-      
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             Songcsroll.Maximum = Convert.ToInt32(wmp.currentMedia.duration);
@@ -214,7 +124,6 @@ namespace A_Player
                 int m = (s - (h * 3600)) / 60;
                 s = s - (h * 3600 + m * 60);
                 label3.Text = String.Format("{0:D}:{1:D2}:{2:D2}", h, m, s);
-
                 s = (int)wmp.controls.currentPosition;
                 h = s / 3600;
                 m = (s - (h * 3600)) / 60;
@@ -290,8 +199,6 @@ namespace A_Player
             }
         }
 
-
-
         private void list_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (MusicList.SelectedItem != null)
@@ -316,7 +223,6 @@ namespace A_Player
                 OpenTrack.Enabled = false;
                 PlayPause.Enabled = true;
                 Stop.Enabled = true;
-                label1.Text = "Playing:";
             }
         }
 
@@ -330,11 +236,12 @@ namespace A_Player
                 Search(dr, file);
                 sounds.ForEach(delegate (Sound sound) {
                     MusicList.Items.Add(sound.Dir + "\\" + sound.Name);
-                });
+                }
+                );
             }
         }
 
-        private void DeleteFolder_Click(object sender, EventArgs e)
+        private void DeleteList_Click(object sender, EventArgs e)
         {
             sounds.Clear();
             MusicList.Items.Clear();
@@ -363,16 +270,15 @@ namespace A_Player
                 sounds.ForEach(delegate (Sound sound)
                 {
                     MusicList.Items.Add(sound.Dir + "\\" + sound.Name);
-                });
+                }
+                );
             }
         }
-
-
 
         private void VKPlayer_Click(object sender, EventArgs e)
         {
             new VkAuthorization().Show();
-  
+            new VKMusicList().Show();
         }
 
         private void DeleteTrack_Click(object sender, EventArgs e)
@@ -389,9 +295,8 @@ namespace A_Player
             find.ForEach(delegate (Sound sound)
             {
                 MusicList.Items.Add(sound.Dir + "\\" + sound.Name);
-            });
+            }
+            );
         }
-
-
     }
 }
