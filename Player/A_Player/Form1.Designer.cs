@@ -51,6 +51,8 @@
             this.DeleteTrack = new System.Windows.Forms.Button();
             this.TextSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.VKList = new System.Windows.Forms.ListBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.Songcsroll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Volume)).BeginInit();
             this.SuspendLayout();
@@ -266,11 +268,24 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Search";
             // 
+            // VKList
+            // 
+            this.VKList.FormattingEnabled = true;
+            this.VKList.Location = new System.Drawing.Point(433, 9);
+            this.VKList.Name = "VKList";
+            this.VKList.Size = new System.Drawing.Size(303, 186);
+            this.VKList.TabIndex = 28;
+            // 
+            // backgroundWorker1
+            // 
+
+            // 
             // AudioPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 430);
+            this.Controls.Add(this.VKList);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TextSearch);
             this.Controls.Add(this.DeleteTrack);
@@ -299,7 +314,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Audio Player";
-            this.QueryAccessibilityHelp += new System.Windows.Forms.QueryAccessibilityHelpEventHandler(this.Form1_QueryAccessibilityHelp);
+        
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AudioPlayer_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AudioPlayer_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AudioPlayer_MouseUp);
@@ -334,6 +349,8 @@
         private System.Windows.Forms.Button DeleteTrack;
         private System.Windows.Forms.TextBox TextSearch;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox VKList;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

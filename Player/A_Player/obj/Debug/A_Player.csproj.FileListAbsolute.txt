@@ -95,7 +95,6 @@ D:\Dev\Player\A_Player\obj\Debug\A_Player.csproj.ResolveComReference.cache
 D:\Dev\Player\A_Player\obj\Debug\A_Player.exe
 D:\Dev\Player\A_Player\obj\Debug\A_Player.pdb
 D:\Dev\Player\A_Player\obj\Debug\A_Player.VkAuthorization.resources
-D:\Dev\Player\A_Player\obj\Debug\A_Player.VKMusicList.resources
 D:\Dev\Player\A_Player\obj\Debug\A_Player.Properties.Resources.resources
 D:\Dev\Player\A_Player\obj\Debug\A_Player.csproj.GenerateResource.Cache
 D:\Dev\Player\A_Player\bin\Debug\A_Player.exe
@@ -114,4 +113,3 @@ D:\Dev\Player\A_Player\bin\Debug\System.Web.Http.xml
 D:\Dev\Player\A_Player\bin\Debug\System.Web.Http.SelfHost.xml
 D:\Dev\Player\A_Player\bin\Debug\System.Web.Http.WebHost.xml
 D:\Dev\Player\A_Player\obj\Debug\A_Player.AudioPlayer.resources
-D:\Dev\Player\A_Player\obj\Debug\A_Player.csprojResolveAssemblyReference.cache
