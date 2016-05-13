@@ -1,6 +1,6 @@
 ﻿namespace A_Player
 {
-    partial class Form2
+    partial class VkAuthorization
     {
         /// <summary>
         /// Required designer variable.
@@ -61,16 +61,16 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // Form2
+            // VkAuthorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 454);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "Form2";
+            this.Name = "VkAuthorization";
             this.Text = "VkAuthorization";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Load += new System.EventHandler(this.VkAuthorization_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

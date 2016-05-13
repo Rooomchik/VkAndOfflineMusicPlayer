@@ -1,6 +1,6 @@
 ﻿namespace A_Player
 {
-    partial class Form3
+    partial class VKMusicList
     {
         /// <summary>
         /// Required designer variable.
@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.VKList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // backgroundWorker1
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
-            // listBox2
+            // VKList
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(1, -1);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(287, 264);
-            this.listBox2.TabIndex = 0;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.VKList.FormattingEnabled = true;
+            this.VKList.Location = new System.Drawing.Point(1, -1);
+            this.VKList.Name = "VKList";
+            this.VKList.Size = new System.Drawing.Size(287, 264);
+            this.VKList.TabIndex = 0;
+            this.VKList.SelectedIndexChanged += new System.EventHandler(this.VKList_SelectedIndexChanged);
             // 
-            // Form3
+            // VKMusicList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.listBox2);
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.Controls.Add(this.VKList);
+            this.Name = "VKMusicList";
+            this.Text = "VKMusicList";
+            this.Load += new System.EventHandler(this.VKMusicList_Load);
             this.ResumeLayout(false);
 
         }
@@ -61,6 +61,6 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox VKList;
     }
 }

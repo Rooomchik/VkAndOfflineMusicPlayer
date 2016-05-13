@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace A_Player
 {
-    public partial class Form2 : Form
+    public partial class VkAuthorization : Form
     {
-        public Form2()
+        public VkAuthorization()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void VkAuthorization_Load(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=5458856&display=popup&redirect_uri=https://oauth.vk.com/blank.html&scope=audio,offline&response_type=token&v=5.52");
         }

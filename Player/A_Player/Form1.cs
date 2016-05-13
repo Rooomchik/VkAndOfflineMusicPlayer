@@ -9,7 +9,7 @@ using System.Text;
 
 namespace A_Player
 {
-    public partial class Form1 : Form
+    public partial class AudioPlayer : Form
     {
         WindowsMediaPlayer wmp;
         bool pausePlay;
@@ -19,7 +19,7 @@ namespace A_Player
         List<Sound> sounds = new List<Sound>();
         List<Sound> faind = new List<Sound>();
 
-        public Form1()
+        public AudioPlayer()
         {
             InitializeComponent();
 
@@ -27,15 +27,15 @@ namespace A_Player
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void OpenTrack_Click(object sender, EventArgs e)
         {
             var ofd = new OpenFileDialog();
             if ((ofd.ShowDialog() == DialogResult.OK) && (ofd.FileName != string.Empty))
             {
                 wmp.controls.stop();
-                trackBar1.Value = 0;
-                trackBar2.Value = 10;
-                trackBar3.Value = 5;
+                Songcsroll.Value = 0;
+                Volume.Value = 10;
+                
                 label1.Text = "";
                 label11.Text = "";
                 label3.Text = "0:00:00";
@@ -44,21 +44,21 @@ namespace A_Player
                 wmp.URL = ofd.FileName;
                 wmp.controls.play();
                 timer1.Interval = 1000;
-                trackBar1.Enabled = true;
-                trackBar2.Enabled = true;
-                trackBar3.Enabled = true;
+                Songcsroll.Enabled = true;
+                Volume.Enabled = true;
+                
                 timer1.Enabled = true;
-                button2.Enabled = true;
-                button3.Enabled = true;
+                PlayPause.Enabled = true;
+                Stop.Enabled = true;
                 label1.Text = "Playing:";
 
                 Sound sound = new Sound { Name = Path.GetFileName(ofd.FileName), Dir = Path.GetDirectoryName(ofd.FileName) };
                 sounds.Add(sound);
-                List.Items.Add(Path.GetDirectoryName(ofd.FileName) + "\\" + Path.GetFileName(ofd.FileName));
+                MusicList.Items.Add(Path.GetDirectoryName(ofd.FileName) + "\\" + Path.GetFileName(ofd.FileName));
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void PlayPause_Click(object sender, EventArgs e)
         {
             pausePlay = !pausePlay;
             if (pausePlay)
@@ -73,79 +73,55 @@ namespace A_Player
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Stop_Click(object sender, EventArgs e)
         {
             wmp.controls.stop();
-            trackBar1.Value = 0;
-            trackBar2.Value = 10;
-            trackBar3.Value = 5;
+            Songcsroll.Value = 0;
+            Volume.Value = 10;
+           
             label1.Text = "";
             label11.Text = "";
             label3.Text = "0:00:00";
             label2.Text = "0:00:00";
         }
 
-        private void trackBar1_Scroll(object sender, EventArgs e)
+        private void Songcsroll_Scroll(object sender, EventArgs e)
         {
-            wmp.controls.currentPosition = trackBar1.Value;
+            wmp.controls.currentPosition = Songcsroll.Value;
         }
 
-        private void trackBar2_Scroll(object sender, EventArgs e)
+        private void Volume_Scroll(object sender, EventArgs e)
         {
-            if (trackBar2.Value == 10)
+            if (Volume.Value == 10)
                 wmp.settings.volume = 100;
-            if (trackBar2.Value == 9)
+            if (Volume.Value == 9)
                 wmp.settings.volume = 90;
-            if (trackBar2.Value == 8)
+            if (Volume.Value == 8)
                 wmp.settings.volume = 80;
-            if (trackBar2.Value == 7)
+            if (Volume.Value == 7)
                 wmp.settings.volume = 70;
-            if (trackBar2.Value == 6)
+            if (Volume.Value == 6)
                 wmp.settings.volume = 60;
-            if (trackBar2.Value == 5)
+            if (Volume.Value == 5)
                 wmp.settings.volume = 50;
-            if (trackBar2.Value == 4)
+            if (Volume.Value == 4)
                 wmp.settings.volume = 40;
-            if (trackBar2.Value == 3)
+            if (Volume.Value == 3)
                 wmp.settings.volume = 30;
-            if (trackBar2.Value == 2)
+            if (Volume.Value == 2)
                 wmp.settings.volume = 20;
-            if (trackBar2.Value == 1)
+            if (Volume.Value == 1)
                 wmp.settings.volume = 10;
-            if (trackBar2.Value == 0)
+            if (Volume.Value == 0)
                 wmp.settings.volume = 0;
         }
 
-        private void trackBar3_Scroll(object sender, EventArgs e)
-        {
-            if (trackBar3.Value == 10)
-                wmp.settings.balance = -100;
-            if (trackBar3.Value == 9)
-                wmp.settings.balance = -70;
-            if (trackBar3.Value == 8)
-                wmp.settings.balance = -50;
-            if (trackBar3.Value == 7)
-                wmp.settings.balance = -30;
-            if (trackBar3.Value == 6)
-                wmp.settings.balance = -10;
-            if (trackBar3.Value == 5)
-                wmp.settings.balance = 0;
-            if (trackBar3.Value == 4)
-                wmp.settings.balance = 10;
-            if (trackBar3.Value == 3)
-                wmp.settings.balance = 30;
-            if (trackBar3.Value == 2)
-                wmp.settings.balance = 50;
-            if (trackBar3.Value == 1)
-                wmp.settings.balance = 70;
-            if (trackBar3.Value == 0)
-                wmp.settings.balance = 100;
-        }
+      
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            trackBar1.Maximum = Convert.ToInt32(wmp.currentMedia.duration);
-            trackBar1.Value = Convert.ToInt32(wmp.controls.currentPosition);
+            Songcsroll.Maximum = Convert.ToInt32(wmp.currentMedia.duration);
+            Songcsroll.Value = Convert.ToInt32(wmp.controls.currentPosition);
 
             if (wmp != null)
             {
@@ -168,15 +144,15 @@ namespace A_Player
             }
         }
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void AudioPlayer_MouseDown(object sender, MouseEventArgs e)
         {
-            Form1 f1 = new Form1();
+            AudioPlayer f1 = new AudioPlayer();
             f1.Focus();
             mousePressed = true;
             mouseDownPos = new Point(f1.Location.X + e.Location.X, f1.Location.Y + e.Location.Y + SystemInformation.CaptionHeight);
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        private void AudioPlayer_MouseMove(object sender, MouseEventArgs e)
         {
             if (mousePressed)
             {
@@ -196,21 +172,21 @@ namespace A_Player
             }
         }
 
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        private void AudioPlayer_MouseUp(object sender, MouseEventArgs e)
         {
             mousePressed = false;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Minimum_Click(object sender, EventArgs e)
         {
             wmp.settings.volume = 0;
-            trackBar2.Value = 0;
+            Volume.Value = 0;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Maximum_Click(object sender, EventArgs e)
         {
             wmp.settings.volume = 100;
-            trackBar2.Value = 10;
+            Volume.Value = 10;
         }
         private void Search(DirectoryInfo dr, Regex file)
         {
@@ -234,13 +210,13 @@ namespace A_Player
 
         private void list_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (List.SelectedItem != null)
+            if (MusicList.SelectedItem != null)
             {
-                string curItem = List.SelectedItem.ToString();
+                string curItem = MusicList.SelectedItem.ToString();
                 wmp.controls.stop();
-                trackBar1.Value = 0;
-                trackBar2.Value = 10;
-                trackBar3.Value = 5;
+                Songcsroll.Value = 0;
+                Volume.Value = 10;
+               
                 label1.Text = "";
                 label11.Text = "";
                 label3.Text = "0:00:00";
@@ -249,18 +225,18 @@ namespace A_Player
                 wmp.URL = curItem;
                 wmp.controls.play();
                 timer1.Interval = 1000;
-                trackBar1.Enabled = true;
-                trackBar2.Enabled = true;
-                trackBar3.Enabled = true;
+                Songcsroll.Enabled = true;
+                Volume.Enabled = true;
+                
                 timer1.Enabled = true;
-                button1.Enabled = false;
-                button2.Enabled = true;
-                button3.Enabled = true;
+                OpenTrack.Enabled = false;
+                PlayPause.Enabled = true;
+                Stop.Enabled = true;
                 label1.Text = "Playing:";
             }
-        } 
+        }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void OpenFolder_Click(object sender, EventArgs e)
         {
             var ofd = new FolderBrowserDialog();
             if ((ofd.ShowDialog() == DialogResult.OK) && (ofd.SelectedPath != string.Empty))
@@ -269,18 +245,18 @@ namespace A_Player
                 DirectoryInfo dr = new DirectoryInfo(ofd.SelectedPath);
                 Search(dr, file);
                 sounds.ForEach(delegate (Sound sound) {
-                    List.Items.Add(sound.Dir + "\\" + sound.Name);
+                    MusicList.Items.Add(sound.Dir + "\\" + sound.Name);
                 });
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void DeleteFolder_Click(object sender, EventArgs e)
         {
             sounds.Clear();
-            List.Items.Clear();
+            MusicList.Items.Clear();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void SavePlaylist_Click(object sender, EventArgs e)
         {
             SaveFileDialog xmlSaveFile = new SaveFileDialog();
             xmlSaveFile.Filter = "XML files (*.xml)|*.xml";
@@ -290,7 +266,7 @@ namespace A_Player
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void OpenPlaylist_Click(object sender, EventArgs e)
         {
             var xmlOpenFile = new OpenFileDialog();
             xmlOpenFile.Filter = "XML files (*.xml)|*.xml";
@@ -299,10 +275,10 @@ namespace A_Player
 
                 SoundXml.ReadXmlSound(sounds, xmlOpenFile.FileName);
 
-                List.Items.Clear();
+                MusicList.Items.Clear();
                 sounds.ForEach(delegate (Sound sound)
                 {
-                    List.Items.Add(sound.Dir + "\\" + sound.Name);
+                    MusicList.Items.Add(sound.Dir + "\\" + sound.Name);
                 });
             }
         }
@@ -312,27 +288,30 @@ namespace A_Player
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void VKPlayer_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
-            new Form3().Show();
+            new VkAuthorization().Show();
+            new VKMusicList().Show();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void DeleteTrack_Click(object sender, EventArgs e)
         {
-            string file = List.SelectedItem.ToString();
-            List.Items.RemoveAt(List.SelectedIndex);
+            string file = MusicList.SelectedItem.ToString();
+            MusicList.Items.RemoveAt(MusicList.SelectedIndex);
             sounds.Remove(new Sound { Name = Path.GetFileName(file), Dir = Path.GetDirectoryName(file) });
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextSearch_TextChanged(object sender, EventArgs e)
         {
-            List.Items.Clear();
-            faind = sounds.FindAll(x => x.Name.Contains(textBox1.Text));
+            MusicList.Items.Clear();
+            faind = sounds.FindAll(x => x.Name.Contains(TextSearch.Text));
             faind.ForEach(delegate (Sound sound)
             {
-                List.Items.Add(sound.Dir + "\\" + sound.Name);
+                MusicList.Items.Add(sound.Dir + "\\" + sound.Name);
             });
         }
+
+
+
     }
 }

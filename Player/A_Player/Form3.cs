@@ -15,14 +15,14 @@ using System.Windows.Forms;
 
 namespace A_Player
 {
-    public partial class Form3 : Form 
+    public partial class VKMusicList : Form 
     {
          WindowsMediaPlayer wmp;
 
         public List<Audio> audioList;
         
 
-        public Form3()
+        public VKMusicList()
         {
             InitializeComponent();
 
@@ -30,7 +30,7 @@ namespace A_Player
             
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void VKMusicList_Load(object sender, EventArgs e)
         {
             
             backgroundWorker1.RunWorkerAsync();
@@ -68,7 +68,7 @@ namespace A_Player
             {
             for (int i = 0; i < audioList.Count(); i++)
             {
-                listBox2.Items.Add(audioList[i].artist + " - " + audioList[i].title);
+                VKList.Items.Add(audioList[i].artist + " - " + audioList[i].title);
                 
                
             }
@@ -76,9 +76,9 @@ namespace A_Player
             });
             }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e) 
+        private void VKList_SelectedIndexChanged(object sender, EventArgs e) 
         {
-            int curItem = listBox2.SelectedIndex;
+            int curItem = VKList.SelectedIndex;
 
                 wmp.URL = audioList[curItem].url;
                 wmp.settings.volume = 100;

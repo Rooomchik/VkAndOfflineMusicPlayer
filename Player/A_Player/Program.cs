@@ -13,8 +13,8 @@ namespace A_Player
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            Application.Run(new Form3());
+            Application.Run(new AudioPlayer());
+            Application.Run(new VKMusicList());
         }
     }
 }
